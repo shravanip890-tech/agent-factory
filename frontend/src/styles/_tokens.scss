@@ -1,0 +1,43 @@
+// Design tokens. Components use these variables only; no hardcoded theme colors.
+:root {
+  --sp-0: 4px; --sp-1: 8px; --sp-2: 16px; --sp-3: 24px; --sp-4: 32px; --sp-5: 40px; --sp-6: 48px;
+  --radius-sm: 6px; --radius: 8px; --radius-lg: 12px;
+  --dur-fast: 150ms; --dur: 200ms; --dur-slow: 250ms; --ease: cubic-bezier(.2, .6, .2, 1);
+  --sidebar-w: 264px; --sidebar-w-rail: 72px; --topbar-h: 64px;
+  --font: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+:root, :root[data-theme='light'] {
+  --bg: #F6F8FB; --surface: #FFFFFF; --surface-2: #F1F4F9; --surface-hover: #F4F6FA; --sidebar-bg: #FFFFFF;
+  --border: #E5E7EB; --border-strong: #D1D5DB;
+  --text: #111827; --text-2: #64748B; --text-3: #94A3B8;
+  --accent: #4F46E5; --accent-hover: #4338CA; --accent-text: #4338CA; --accent-contrast: #FFFFFF;
+  --accent-soft: rgba(79, 70, 229, .08); --accent-ring: rgba(79, 70, 229, .28);
+  --cyan: #0891B2; --cyan-soft: rgba(8, 145, 178, .10);
+  --success: #059669; --success-soft: rgba(5, 150, 105, .10);
+  --warn: #B45309; --warn-soft: rgba(180, 83, 9, .10);
+  --danger: #DC2626; --danger-soft: rgba(220, 38, 38, .08);
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, .05);
+  --shadow: 0 1px 3px rgba(16, 24, 40, .06), 0 4px 12px rgba(16, 24, 40, .04);
+  --shadow-lg: 0 12px 32px rgba(16, 24, 40, .14);
+  --scrim: rgba(17, 24, 39, .45);
+  --glow: 0 0 0 transparent;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0B0F14; --surface: #111827; --surface-2: #171D26; --surface-hover: #171D26; --sidebar-bg: #0D1219;
+  --border: #1F2937; --border-strong: #2B3647;
+  --text: #F8FAFC; --text-2: #94A3B8; --text-3: #64748B;
+  --accent: #6366F1; --accent-hover: #7C7FF5; --accent-text: #A5B4FC; --accent-contrast: #FFFFFF;
+  --accent-soft: rgba(99, 102, 241, .14); --accent-ring: rgba(129, 140, 248, .45);
+  --cyan: #22D3EE; --cyan-soft: rgba(34, 211, 238, .12);
+  --success: #34D399; --success-soft: rgba(52, 211, 153, .12);
+  --warn: #FBBF24; --warn-soft: rgba(251, 191, 36, .12);
+  --danger: #F87171; --danger-soft: rgba(248, 113, 113, .12);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .4);
+  --shadow: 0 1px 3px rgba(0, 0, 0, .35), 0 4px 12px rgba(0, 0, 0, .25);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, .55);
+  --scrim: rgba(0, 0, 0, .6);
+  --glow: 0 0 0 1px rgba(99, 102, 241, .35), 0 0 18px rgba(99, 102, 241, .12);
+}
